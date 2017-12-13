@@ -1,7 +1,10 @@
 FROM sameersbn/ubuntu:14.04.20170123
 MAINTAINER sameer@damagehead.com
 
+RUN locale-gen en_US.UTF-8
 ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US:en
+ENV LC_ALL en_US.UTF-8
 
 ENV PG_APP_HOME="/etc/docker-postgresql"\
     PG_VERSION=9.6 \
