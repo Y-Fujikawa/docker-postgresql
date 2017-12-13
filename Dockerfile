@@ -1,6 +1,8 @@
 FROM sameersbn/ubuntu:14.04.20170123
 MAINTAINER sameer@damagehead.com
 
+ENV LANG en_US.UTF-8
+
 ENV PG_APP_HOME="/etc/docker-postgresql"\
     PG_VERSION=9.6 \
     PG_USER=postgres \
